@@ -8,7 +8,7 @@ aliases:
   - Qingyao Ai
   - Qing-yao Ai
 links:
-    home-page: http://qingyaoai.github.io/
+    home-page: /group/aiqy/
     email: aiqy@tsinghua.edu.cn
     github: QingyaoAi
     google-scholar: UKqaI5IAAAAJ
