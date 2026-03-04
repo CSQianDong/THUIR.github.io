@@ -7,11 +7,11 @@
       <div class="faculty-page">
         <div class="faculty-sidebar">
           <div class="faculty-photo-container">
-            <img src="{{ page.photo }}" alt="{{ page.name }}" class="faculty-photo">
+            <img src="{{ page.photo }}" alt="{{ page.faculty_name }}" class="faculty-photo">
           </div>
-          <h2 class="faculty-name">{{ page.name }}</h2>
-          {% if page.name_cn %}
-          <p class="faculty-name-cn">{{ page.name_cn }}</p>
+          <h2 class="faculty-name">{{ page.faculty_name }}</h2>
+          {% if page.faculty_name_cn %}
+          <p class="faculty-name-cn">{{ page.faculty_name_cn }}</p>
           {% endif %}
           <p class="faculty-title">{{ page.position }}</p>
           <div class="faculty-contact">
