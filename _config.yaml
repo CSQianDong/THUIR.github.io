@@ -78,12 +78,5 @@ plugins:
   # - jekyll-relative-links
   # - jemoji
 
-# include directories with ~ prefix (faculty pages)
-include:
-  - "group/~msp"
-  - "group/~mzhang"
-  - "group/~YQLiu"
-  - "group/~yueyuewu"
-
 # jekyll theme
 theme: null
