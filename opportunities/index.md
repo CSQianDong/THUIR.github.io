@@ -86,9 +86,9 @@ THUIR课题组长期招募博士后，欢迎有信息检索、自然语言处理
 **合作导师**
 
 
-[张敏](http://www.thuir.cn/group/~mzhang)教授，
-[刘奕群](http://www.thuir.cn/group/~YQLiu)教授，
-[艾清遥](http://www.thuir.cn/group/~aiqy)副教授
+[张敏](/group/mzhang/)教授，
+[刘奕群](/group/YQLiu/)教授，
+[艾清遥](/group/aiqy/)副教授
 
 {:.center}
 {% endcapture %}

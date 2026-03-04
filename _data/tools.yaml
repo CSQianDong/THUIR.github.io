@@ -53,7 +53,7 @@
 - title: User Behavior Dataset
   group: dataset
   image: images/opensource/UserBehavior.jpg
-  link: http://www.thuir.cn/group/~YQLiu/datasets/WSDM19Wu.zip
+  link: /group/YQLiu/datasets/WSDM19Wu.zip
   description: The influence of image search intents on user behavior and satisfaction
   tags:
     - Logs
@@ -62,7 +62,7 @@
 - title: Reading Attention Dataset
   group: dataset
   image: images/opensource/ReadingAttention.jpg
-  link: http://www.thuir.cn/group/~YQLiu/datasets/CIKM18Li.zip
+  link: /group/YQLiu/datasets/CIKM18Li.zip
   description: Understanding Reading Attention Distribution during Relevance Judgement.
   tags:
     - Annotation
