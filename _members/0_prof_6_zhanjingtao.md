@@ -1,7 +1,7 @@
 ---  
 name: Jingtao Zhan<br/>詹靖涛
 image: images/people/zjt.jpg  
-description: Assistant Professor  
+description: Tenure-Track Assistant Professor 教研系列准聘助理教授  
 role: pi  
 links: 
     home-page: https://jingtaozhan.github.io/   
