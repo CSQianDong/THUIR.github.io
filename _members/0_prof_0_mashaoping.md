@@ -8,7 +8,7 @@ aliases:
   - Shaoping Ma
   - Shao-ping Ma
 links:
-  home-page: http://www.thuir.cn/group/~msp/
+  home-page: /group/msp/
   email: msp@tsinghua.edu.cn
 ---
 

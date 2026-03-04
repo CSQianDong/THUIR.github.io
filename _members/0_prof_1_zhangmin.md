@@ -7,7 +7,7 @@ aliases:
   - M Zhang
   - Min Zhang
 links:
-  home-page: http://www.thuir.cn/group/~mzhang/
+  home-page: /group/mzhang/
   google-scholar: https://scholar.google.com/citations?user=0HtCYQEAAAAJ
   email: z-m@tsinghua.edu.cn
 
