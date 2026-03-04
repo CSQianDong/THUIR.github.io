@@ -1,0 +1,201 @@
+---
+---
+
+/* Faculty Page Styles */
+
+.faculty-page {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.faculty-sidebar {
+  flex: 0 0 260px;
+  position: sticky;
+  top: 80px;
+  text-align: center;
+  background: #fafbfc;
+  border-radius: 8px;
+  padding: 30px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.faculty-photo-container {
+  margin-bottom: 15px;
+}
+
+.faculty-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e0e0e0;
+  display: block;
+  margin: 0 auto;
+}
+
+.faculty-name {
+  font-size: 1.4em;
+  margin: 10px 0 2px;
+  color: #333;
+  font-weight: 700;
+}
+
+.faculty-name-cn {
+  font-size: 1.1em;
+  color: #666;
+  margin: 0 0 8px;
+}
+
+.faculty-title {
+  font-size: 0.9em;
+  color: #555;
+  margin: 5px 0 15px;
+  line-height: 1.5;
+}
+
+.faculty-contact {
+  text-align: left;
+  font-size: 0.85em;
+  color: #555;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 12px;
+  margin-top: 10px;
+
+  p {
+    margin: 5px 0;
+    word-break: break-all;
+  }
+}
+
+.faculty-links {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 12px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  a {
+    display: block;
+    font-size: 0.85em;
+    color: #0066cc;
+    text-decoration: none;
+    padding: 4px 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Main content area */
+.faculty-content {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.95em;
+  line-height: 1.7;
+
+  h1 {
+    font-size: 1.6em;
+    color: #333;
+    border-bottom: 2px solid #660000;
+    padding-bottom: 8px;
+    margin: 30px 0 15px;
+    font-weight: 700;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h2 {
+    font-size: 1.3em;
+    color: #444;
+    margin: 25px 0 12px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    color: #555;
+    margin: 20px 0 10px;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 8px 0;
+  }
+
+  /* Publication lists */
+  ul {
+    padding-left: 20px;
+    margin: 8px 0;
+  }
+
+  li {
+    margin: 6px 0;
+    line-height: 1.6;
+  }
+
+  /* Nested publication year groups */
+  > ul > li {
+    margin: 10px 0;
+    list-style: none;
+
+    > p > b,
+    > p > strong {
+      color: #660000;
+    }
+  }
+
+  /* Publication venue highlighting */
+  b, strong {
+    font-weight: 600;
+  }
+
+  a {
+    color: #0066cc;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  /* About me section styling */
+  .about-text {
+    font-size: 1.0em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  /* Professional activities list */
+  .activities-list {
+    li {
+      margin: 4px 0;
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faculty-page {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .faculty-sidebar {
+    flex: none;
+    width: 100%;
+    position: static;
+  }
+
+  .faculty-photo {
+    width: 150px;
+    height: 150px;
+  }
+}

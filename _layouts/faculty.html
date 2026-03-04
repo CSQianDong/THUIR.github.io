@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main>
+      <div class="faculty-page">
+        <div class="faculty-sidebar">
+          <div class="faculty-photo-container">
+            <img src="{{ page.photo }}" alt="{{ page.name }}" class="faculty-photo">
+          </div>
+          <h2 class="faculty-name">{{ page.name }}</h2>
+          {% if page.name_cn %}
+          <p class="faculty-name-cn">{{ page.name_cn }}</p>
+          {% endif %}
+          <p class="faculty-title">{{ page.position }}</p>
+          <div class="faculty-contact">
+            {% if page.email %}
+            <p><strong>Email:</strong> {{ page.email }}</p>
+            {% endif %}
+            {% if page.phone %}
+            <p><strong>Phone:</strong> {{ page.phone }}</p>
+            {% endif %}
+            {% if page.fax %}
+            <p><strong>Fax:</strong> {{ page.fax }}</p>
+            {% endif %}
+            {% if page.office %}
+            <p><strong>Office:</strong> {{ page.office }}</p>
+            {% endif %}
+          </div>
+          <div class="faculty-links">
+            {% if page.google_scholar %}
+            <a href="{{ page.google_scholar }}" target="_blank">Google Scholar</a>
+            {% endif %}
+            {% if page.dblp %}
+            <a href="{{ page.dblp }}" target="_blank">DBLP</a>
+            {% endif %}
+            {% if page.semantic_scholar %}
+            <a href="{{ page.semantic_scholar }}" target="_blank">Semantic Scholar</a>
+            {% endif %}
+            {% if page.github %}
+            <a href="{{ page.github }}" target="_blank">GitHub</a>
+            {% endif %}
+            {% if page.weibo %}
+            <a href="{{ page.weibo }}" target="_blank">Weibo</a>
+            {% endif %}
+            {% for cv in page.cv_links %}
+            <a href="{{ cv.url }}">{{ cv.label }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="faculty-content">
+          {{ content }}
+        </div>
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
