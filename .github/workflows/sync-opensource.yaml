@@ -1,0 +1,30 @@
+name: Sync Opensource Page
+
+on:
+  schedule:
+    - cron: "0 0 * * 0" # every Sunday at 00:00 UTC
+  workflow_dispatch:
+
+jobs:
+  sync_opensource:
+    name: Sync Opensource Page
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install packages
+        run: python -m pip install --upgrade --requirement ./opensource-sync/requirements.txt
+      - name: Update tools.yaml from GitHub and HuggingFace
+        run: python ./opensource-sync/update_opensource.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit updated opensource data
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          file_pattern: "_data/tools.yaml"
+          commit_message: "Sync opensource page from GitHub and HuggingFace"

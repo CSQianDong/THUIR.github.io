@@ -1,3 +1,7 @@
+# ============================================================
+# Toolkits
+# ============================================================
+
 - title: ReChorus2.0
   subtitle: Top-K Recommendation with Implicit Feedback
   group: toolkit
@@ -32,6 +36,75 @@
     - TensorFlow
     - Learning to Rank
 
+- title: EasyRL4Rec
+  subtitle: Reinforcement Learning for Recommender Systems
+  group: toolkit
+  image: https://opengraph.githubassets.com/1/THUIR/EasyRL4Rec
+  link: https://github.com/THUIR/EasyRL4Rec
+  description: EasyRL4Rec is an easy-to-use library for Reinforcement Learning (RL) based Recommender Systems, covering five public datasets, three accessible simulator-based environments, comprehensive RL-based baselines, and unified evaluation protocols to make RL-based recommendation research easier to reproduce and compare.
+  repo: THUIR/EasyRL4Rec
+  tags:
+    - Reinforcement Learning
+    - Recommendation
+
+- title: RUS-toolkit
+  subtitle: Privacy-Aware Remote IR User-Study Logging Tool
+  group: toolkit
+  image: https://opengraph.githubassets.com/1/THUIR/RUS-toolkit
+  link: https://github.com/THUIR/RUS-toolkit
+  description: A privacy-aware logging toolkit for running remote information retrieval user-study experiments, helping researchers collect interaction data from participants without compromising user privacy.
+  repo: THUIR/RUS-toolkit
+  tags:
+    - User Study
+    - Privacy
+
+- title: MemCraft
+  subtitle: A Memory Plugin for OpenClaw
+  group: toolkit
+  image: https://opengraph.githubassets.com/1/THUIR/MemCraft
+  link: https://github.com/THUIR/MemCraft
+  description: MemCraft is an OpenClaw memory integration plugin that connects major LLM memory baselines to OpenClaw, providing a local-first, reproducible, and extensible unified memory framework for both general users and researchers.
+  repo: THUIR/MemCraft
+  tags:
+    - LLM
+    - Memory
+
+- title: LegalKit
+  subtitle: Evaluation Toolkit for Legal-Domain LLMs
+  group: toolkit
+  image: https://opengraph.githubassets.com/1/THUIR/LegalKit
+  link: https://github.com/THUIR/LegalKit
+  description: LegalKit is a practical and extensible evaluation toolkit for legal-domain Large Language Models. It unifies dataset adapters, model generation, offline JSON evaluation, and LLM-as-Judge scoring into a single workflow, with an optional lightweight Web UI for non-terminal users.
+  repo: THUIR/LegalKit
+  tags:
+    - LLM Evaluation
+    - Legal
+
+- title: Dynamic RAG Toolbox
+  subtitle: SIGIR 2025 Tutorial on Dynamic and Parametric RAG
+  group: toolkit
+  image: https://opengraph.githubassets.com/1/THUIR/sigir25-tutorial-dynamic
+  link: https://github.com/THUIR/sigir25-tutorial-dynamic
+  description: A clean, modular, and easy-to-use codebase developed for the SIGIR 2025 Tutorial on Dynamic and Parametric Retrieval-Augmented Generation, to reproduce, compare, and extend dynamic RAG methods such as DRAGIN (ACL 2024) and FLARE.
+  repo: THUIR/sigir25-tutorial-dynamic
+  tags:
+    - RAG
+    - Tutorial
+
+- title: Parametric RAG Toolkit
+  subtitle: SIGIR 2025 Tutorial on Dynamic and Parametric RAG
+  group: toolkit
+  image: https://opengraph.githubassets.com/1/THUIR/sigir25-tutorial-parametric
+  link: https://github.com/THUIR/sigir25-tutorial-parametric
+  description: A toolkit developed for the SIGIR 2025 Tutorial on Dynamic and Parametric Retrieval-Augmented Generation, designed to help researchers and practitioners reproduce, compare, and extend Parametric RAG methods, specifically PRAG and DyPRAG.
+  repo: THUIR/sigir25-tutorial-parametric
+  tags:
+    - RAG
+    - Tutorial
+
+# ============================================================
+# Datasets
+# ============================================================
 
 - title: TianGong-CRL Dataset
   group: dataset
@@ -79,7 +152,7 @@
   group: dataset
   image: images/opensource/Sogou-QCL.jpg
   link: http://www.thuir.cn/sogouqcl
-  description: The Sogou-QCL dataset was created to support research on information retrieval and related human language technologies. The dataset consists of 537,366 queries, more than 9 million Chinese web pages, and five kinds of relevance labels assessed by click models. Moreover, a 2,000-queries’ dataset with 4-level human assessed relevance labels is also offered to the public for research.
+  description: The Sogou-QCL dataset was created to support research on information retrieval and related human language technologies. The dataset consists of 537,366 queries, more than 9 million Chinese web pages, and five kinds of relevance labels assessed by click models. Moreover, a 2,000-queries' dataset with 4-level human assessed relevance labels is also offered to the public for research.
   tags:
     - Logs
 
@@ -96,7 +169,7 @@
   group: dataset
   image: images/opensource/SearchSuccess.jpg
   link: http://www.thuir.cn/data-SearchSuccess/
-  description: This dataset was created to support research on search evaluation in exploratory search. We conducted a user study which contained 166 search sessions in three domains. Users’ interactions and explicit feedback were collected during searching process. The clicked documents collected in the user study were annotated by external assessors.
+  description: This dataset was created to support research on search evaluation in exploratory search. We conducted a user study which contained 166 search sessions in three domains. Users' interactions and explicit feedback were collected during searching process. The clicked documents collected in the user study were annotated by external assessors.
   tags:
     - Logs
 
@@ -105,6 +178,7 @@
   image: images/opensource/ZhihuRec.jpg
   link: https://github.com/THUIR/ZhihuRec-Dataset
   description: ZhihuRec dataset is collected from a knowledge-sharing platform (Zhihu), which is composed of around 100M interactions collected within 10 days, 798K users, 165K questions, 554K answers, 240K authors, 70K topics, and more than 501K user query logs. There are also descriptions of users, answers, questions, authors, and topics, which are anonymous. To the best of our knowledge, this is the largest real-world interaction dataset for personalized recommendation.
+  repo: THUIR/ZhihuRec-Dataset
   tags:
     - Logs
 
@@ -112,7 +186,8 @@
   group: dataset
   image: images/opensource/T2Ranking.png
   link: https://github.com/THUIR/T2Ranking
-  description:  T<sup>2</sup>Ranking is a large-scale Chinese benchmark for passage ranking, including passage retrieval and re-ranking. T<sup>2</sup>Ranking comprises more than 300K queries and over 2M unique passages from real- world search engines. Specifically, we sample question-based search queries from user logs of the Sogou search engine, a popular search system in China. For each query, we extract the content of corresponding documents from different search engines. After model-based passage segmentation and clustering-based passage de-duplication, a large-scale passage corpus is obtained. For a given query and its corresponding passages, we hire expert annotators to provide 4-level relevance judgments of each query-passage pair. 
+  description: T<sup>2</sup>Ranking is a large-scale Chinese benchmark for passage ranking, including passage retrieval and re-ranking. T<sup>2</sup>Ranking comprises more than 300K queries and over 2M unique passages from real-world search engines. Specifically, we sample question-based search queries from user logs of the Sogou search engine, a popular search system in China. For each query, we extract the content of corresponding documents from different search engines. After model-based passage segmentation and clustering-based passage de-duplication, a large-scale passage corpus is obtained. For a given query and its corresponding passages, we hire expert annotators to provide 4-level relevance judgments of each query-passage pair.
+  repo: THUIR/T2Ranking
   tags:
     - Annotation
     - Passage retrieval
@@ -120,34 +195,21 @@
 
 - title: EEG-SVRec
   group: dataset
-  # image: images/opensource/T2Ranking.png
   link: https://github.com/hezy18/EEG-SVRec/
-  description:  EEG-SVRec is  the first EEG dataset with user multidimensional affective engagement labels in short video recommendation. It can be used for a deeper exploration of affective experience and cognitive activity behind user behaviors in recommender systems. 
+  description: EEG-SVRec is the first EEG dataset with user multidimensional affective engagement labels in short video recommendation. It can be used for a deeper exploration of affective experience and cognitive activity behind user behaviors in recommender systems.
   tags:
     - EEG
 
-
 - title: STARD
   group: dataset
-  # image: images/opensource/T2Ranking.png
-  link: https://github.com/oneal2000/STARD
-  description: STARD is a Chinese dataset that compiles 1,543 query cases from real legal consultations and 55,348 candidate statutory articles, aimed at addressing the neglect of non-professional public queries in existing statute retrieval benchmarks, thereby more comprehensively capturing the complexity and diversity of real queries from the public. 
+  link: https://github.com/THUIR/STARD
+  description: STARD is a Chinese dataset that compiles 1,543 query cases from real legal consultations and 55,348 candidate statutory articles, aimed at addressing the neglect of non-professional public queries in existing statute retrieval benchmarks, thereby more comprehensively capturing the complexity and diversity of real queries from the public.
+  repo: THUIR/STARD
   tags:
     - Legal
 
-
-- title: HELM
-  group: dataset
-  # image: images/opensource/T2Ranking.png
-  link: https://github.com/oneal2000/MIND
-  description: HELM is a hallucination detection benchmark dataset for large language models (LLM), offering texts generated by six different LLMs along with their hallucination annotations. It also includes contextual embeddings, self-attentions, and hidden-layer activations for each token during the inference process of each LLM, providing a detailed snapshot for studying the internal state changes of these models.
-  tags:
-    - Hallucination
-
-
 - title: URS
   group: dataset
-  # image: images/opensource/T2Ranking.png
   link: https://github.com/Alice1998/URS
   description: The URS (User Reported Scenario) dataset comprises 1,846 real-world conversations with 15 LLM services, contributed by 712 users from 23 countries across 6 continents. Each scenario is classified into six user intent categories. This dataset, characterized by its user-centric, multi-intent, and multi-cultural nature, provides a valuable resource for advancing user-centric evaluations of LLMs.
   tags:
@@ -155,20 +217,516 @@
 
 - title: GNN4EEG
   group: dataset
-  # image: images/opensource/T2Ranking.png
   link: https://github.com/Miracle-2001/GNN4EEG
-  description: GNN4EEG is a benchmark and toolkit focusing on Electroencephalography (EEG) classification tasks via Graph Neural Network (GNN), aiming to facilitate research in this direction. Researchers can arbitrarily choose their preferred GNN models, hyper-parameters and experimental protocols. Training and evaluating dataset can be flexibly chosen as any self-built datasets. 
+  description: GNN4EEG is a benchmark and toolkit focusing on Electroencephalography (EEG) classification tasks via Graph Neural Network (GNN), aiming to facilitate research in this direction. Researchers can arbitrarily choose their preferred GNN models, hyper-parameters and experimental protocols. Training and evaluating dataset can be flexibly chosen as any self-built datasets.
   tags:
     - EEG
 
 - title: LeKUBE
   group: dataset
-  # image: images/opensource/T2Ranking.png
   link: https://github.com/bebr2/LeKUBE
-  description: LeKUBE serves as a benchmark for knowledge updating methods in the legal domain, which is distinct from general domain knowledge updating. The legal domain presents unique challenges such as legal reasoning, application of law, and the length of legal regulations. LeKUBE concentrates on these challenges, providing a comprehensive evaluation of knowledge updating methods in the legal domain across five dimensions (accuracy, generalizability, locality, retainability, and scalability). 
+  description: LeKUBE serves as a benchmark for knowledge updating methods in the legal domain, which is distinct from general domain knowledge updating. The legal domain presents unique challenges such as legal reasoning, application of law, and the length of legal regulations. LeKUBE concentrates on these challenges, providing a comprehensive evaluation of knowledge updating methods in the legal domain across five dimensions (accuracy, generalizability, locality, retainability, and scalability).
   tags:
     - Legal
 
+- title: LeCaRDv2
+  group: dataset
+  link: https://github.com/THUIR/LeCaRDv2
+  description: LeCaRDv2 is a large-scale Chinese legal case retrieval dataset, providing extensive query-candidate pairs with fine-grained relevance annotations to support research on legal case retrieval.
+  repo: THUIR/LeCaRDv2
+  tags:
+    - Legal
 
+- title: Legal Case Retrieval Intent Dataset
+  group: dataset
+  link: https://github.com/THUIR/Search-behavior-dataset
+  description: The official code and data accompanying "An Intent Taxonomy of Legal Case Retrieval," providing a taxonomy and annotated search behavior data for understanding user intents in legal case retrieval.
+  repo: THUIR/Search-behavior-dataset
+  tags:
+    - Legal
+    - User Intent
 
+- title: EEG-based Short Video Emotion Dataset
+  group: dataset
+  link: https://github.com/THUIR/A-Dataset-for-EEG-based-Emotion-Analysis-under-Different-Information-Environments
+  description: A dataset for EEG-based emotion analysis under different information environments, focused on the short video recommendation scenario.
+  repo: THUIR/A-Dataset-for-EEG-based-Emotion-Analysis-under-Different-Information-Environments
+  tags:
+    - EEG
 
+- title: News Reading User Study Data
+  group: dataset
+  link: https://github.com/THUIR/News-Reading-User-Study-Data
+  description: User study data on news reading behavior, collected and used in our SIGIR 2018 and WWW 2019 papers.
+  repo: THUIR/News-Reading-User-Study-Data
+  tags:
+    - User Study
+    - Logs
+
+- title: Usefulness User Study Data
+  group: dataset
+  link: https://github.com/THUIR/UsefulnessUserStudyData
+  description: Search logs together with query/task usefulness, satisfaction, and relevance annotations collected from a user study on search usefulness.
+  repo: THUIR/UsefulnessUserStudyData
+  tags:
+    - User Study
+    - Annotation
+    - Logs
+
+- title: Brain-Relevance-Feedback
+  group: dataset
+  link: https://github.com/THUIR/Brain-Relevance-Feedback
+  description: Datasets and implementation for relevance feedback with brain signals, exploring how brain-computer signals can be used to infer document relevance.
+  repo: THUIR/Brain-Relevance-Feedback
+  tags:
+    - EEG
+    - Relevance Feedback
+
+- title: RuleRec
+  group: dataset
+  link: https://github.com/THUIR/RuleRec
+  description: Datasets and implementation for "Jointly Learning Explainable Rules for Recommendation with Knowledge Graph" (TheWebConf 2019), combining knowledge-graph rules with recommendation models.
+  repo: THUIR/RuleRec
+  tags:
+    - Recommendation
+    - Knowledge Graph
+
+- title: SurGE
+  group: dataset
+  link: https://github.com/THUIR/SurGE
+  description: SurGE is a benchmark and dataset for end-to-end scientific survey generation in the computer science domain, developed for the SIGIR Resource Track, requiring systems to retrieve from over 1 million papers, organize a hierarchical outline, and generate a coherent survey.
+  repo: THUIR/SurGE
+  tags:
+    - Survey Generation
+    - LLM
+
+- title: LexEval
+  group: dataset
+  link: https://github.com/THUIR/LexEval
+  description: LexEval is a comprehensive benchmark for evaluating large language models in the legal domain.
+  repo: THUIR/LexEval
+  tags:
+    - Legal
+    - LLM Evaluation
+
+- title: CoLLaM
+  group: dataset
+  link: https://github.com/THUIR/CoLLaM
+  description: CoLLaM is a comprehensive benchmark for large legal language models.
+  repo: THUIR/CoLLaM
+  tags:
+    - Legal
+    - LLM Evaluation
+
+- title: JuDGE
+  group: dataset
+  link: https://github.com/THUIR/JuDGE
+  description: JuDGE is a benchmark for judgment document generation, evaluating systems that automatically draft legal judgment documents.
+  repo: THUIR/JuDGE
+  tags:
+    - Legal
+    - LLM Evaluation
+
+# ============================================================
+# Code / Paper Implementations
+# ============================================================
+
+- title: MemoryBench (Code)
+  group: code
+  link: https://github.com/THUIR/MemoryBench
+  description: Code for MemoryBench, a benchmark for memory and continual learning in LLM systems. See the corresponding dataset on HuggingFace below.
+  repo: THUIR/MemoryBench
+  tags:
+    - LLM
+    - Memory
+
+- title: DRAGIN
+  group: code
+  link: https://github.com/THUIR/DRAGIN
+  description: Source code of DRAGIN (ACL 2024 main conference Long Paper), a method for dynamically deciding when and what to retrieve during text generation based on the real-time information needs of large language models.
+  repo: THUIR/DRAGIN
+  tags:
+    - RAG
+    - LLM
+
+- title: LegalOne-R1
+  group: code
+  link: https://github.com/THUIR/LegalOne-R1
+  description: LegalOne-R1, a family of legal foundation models for reliable legal reasoning.
+  repo: THUIR/LegalOne-R1
+  tags:
+    - Legal
+    - LLM
+
+- title: GPRF
+  group: code
+  link: https://github.com/THUIR/GPRF
+  description: Code for Generalized Pseudo-Relevance Feedback, extending pseudo-relevance feedback techniques for modern retrieval pipelines.
+  repo: THUIR/GPRF
+  tags:
+    - Retrieval
+
+- title: PRAG
+  group: code
+  link: https://github.com/THUIR/PRAG
+  description: Code for Parametric Retrieval-Augmented Generation, injecting retrieved knowledge directly into LLM parameters instead of the input context.
+  repo: THUIR/PRAG
+  tags:
+    - RAG
+    - LLM
+
+- title: Robust Fine-tuning (RbFT)
+  group: code
+  link: https://github.com/THUIR/Robust-Fine-tuning
+  description: Code for Robust Fine-tuning (RbFT), improving the robustness of retrieval-augmented LLMs to noisy or irrelevant retrieved content.
+  repo: THUIR/Robust-Fine-tuning
+  tags:
+    - RAG
+    - LLM
+
+- title: DecoupledRAG
+  group: code
+  link: https://github.com/THUIR/DecoupledRAG
+  description: DecoupledRAG decouples external knowledge from the input context in Retrieval-Augmented Generation, injecting knowledge via cross-attention during inference for more efficient and robust knowledge integration.
+  repo: THUIR/DecoupledRAG
+  tags:
+    - RAG
+    - LLM
+
+- title: LexiLaw
+  group: code
+  link: https://github.com/THUIR/LexiLaw
+  description: LexiLaw is a Chinese legal large language model, fine-tuned to provide legal consultation and assistance.
+  repo: THUIR/LexiLaw
+  tags:
+    - Legal
+    - LLM
+
+- title: LLM_Eval
+  group: code
+  link: https://github.com/THUIR/LLM_Eval
+  description: A general framework for evaluating the performance of large language models based on the peer review mechanism among LLMs.
+  repo: THUIR/LLM_Eval
+  tags:
+    - LLM Evaluation
+
+- title: PreHash
+  group: code
+  link: https://github.com/THUIR/PreHash
+  description: 'Implementation of "Beyond User Embedding Matrix: Learning to Hash for Modeling Large-Scale Users in Recommendation" (SIGIR 2020).'
+  repo: THUIR/PreHash
+  tags:
+    - Recommendation
+
+- title: MIND
+  group: code
+  link: https://github.com/THUIR/MIND
+  description: Source code of our MIND paper (ACL 2024 Long Paper).
+  repo: THUIR/MIND
+  tags:
+    - LLM
+
+- title: III-Retriever
+  group: code
+  link: https://github.com/THUIR/III-Retriever
+  description: Code for I3 Retriever, accepted by CIKM 2023.
+  repo: THUIR/III-Retriever
+  tags:
+    - Retrieval
+
+- title: CaseEncoder
+  group: code
+  link: https://github.com/THUIR/CaseEncoder
+  description: CaseEncoder, a knowledge-enhanced pre-trained model for legal case encoding (EMNLP 2023).
+  repo: THUIR/CaseEncoder
+  tags:
+    - Legal
+    - Retrieval
+
+- title: JTR
+  group: code
+  link: https://github.com/THUIR/JTR
+  description: Official repo for "Constructing Tree-based Index for Efficient and Effective Dense Retrieval" (SIGIR 2023 Full paper).
+  repo: THUIR/JTR
+  tags:
+    - Retrieval
+
+- title: SAILER
+  group: code
+  link: https://github.com/THUIR/SAILER
+  description: Official repo for "Structure-aware Pre-trained Language Model for Legal Case Retrieval" (SIGIR 2023 Full paper).
+  repo: THUIR/SAILER
+  tags:
+    - Legal
+    - Retrieval
+
+- title: CC-CC
+  group: code
+  link: https://github.com/THUIR/CC-CC
+  description: Implementation of "Adaptive Feature Sampling for Recommendation with Missing Content Feature Values" (CIKM 2019).
+  repo: THUIR/CC-CC
+  tags:
+    - Recommendation
+
+- title: ACCM
+  group: code
+  link: https://github.com/THUIR/ACCM
+  description: ACCM, an Attentional Content & Collaborate Model for recommendation.
+  repo: THUIR/ACCM
+  tags:
+    - Recommendation
+
+- title: WG4Rec
+  group: code
+  link: https://github.com/THUIR/WG4Rec
+  description: 'Implementation of "WG4Rec: Modeling Textual Content with Word Graph for News Recommendation" (CIKM 2021).'
+  repo: THUIR/WG4Rec
+  tags:
+    - Recommendation
+
+- title: ARES
+  group: code
+  link: https://github.com/THUIR/ARES-master
+  description: Code for "Axiomatically Regularized Pre-training for Ad hoc Search" (SIGIR 2022).
+  repo: THUIR/ARES-master
+  tags:
+    - Retrieval
+
+- title: Reformulation-Aware Metrics
+  group: code
+  link: https://github.com/THUIR/Reformulation-Aware-Metrics
+  description: Code for "Incorporating Query Reformulating Behavior into Web Search Evaluation" (CIKM 2021).
+  repo: THUIR/Reformulation-Aware-Metrics
+  tags:
+    - Evaluation
+
+- title: DAF (Difficulty-Aware Framework)
+  group: code
+  link: https://github.com/THUIR/DAF-for-churn
+  description: Implementation of DAF, a Difficulty-Aware Framework for churn prediction (KDD 2021).
+  repo: THUIR/DAF-for-churn
+  tags:
+    - Recommendation
+
+- title: EHCF
+  group: code
+  link: https://github.com/THUIR/EHCF
+  description: Implementation of "Efficient Heterogeneous Collaborative Filtering without Negative Sampling for Recommendation" (AAAI 2020).
+  repo: THUIR/EHCF
+  tags:
+    - Recommendation
+
+- title: ENSFM
+  group: code
+  link: https://github.com/THUIR/ENSFM
+  description: Implementation of "Efficient Non-Sampling Factorization Machines for Optimal Context-Aware Recommendation" (TheWebConf 2020).
+  repo: THUIR/ENSFM
+  tags:
+    - Recommendation
+
+- title: ENMF
+  group: code
+  link: https://github.com/THUIR/ENMF
+  description: Implementation of Efficient Neural Matrix Factorization, also used in "Efficient Neural Matrix Factorization without Sampling for Recommendation" (TOIS).
+  repo: THUIR/ENMF
+  tags:
+    - Recommendation
+
+- title: SAMN
+  group: code
+  link: https://github.com/THUIR/SAMN
+  description: Implementation of SAMN, a Social Attentional Memory Network for recommendation.
+  repo: THUIR/SAMN
+  tags:
+    - Recommendation
+
+- title: SLRC
+  group: code
+  link: https://github.com/THUIR/SLRC
+  description: Short-term and Life-time Repeat Consumption (SLRC) model for recommendation.
+  repo: THUIR/SLRC
+  tags:
+    - Recommendation
+
+- title: BMAR
+  group: code
+  link: https://github.com/THUIR/BMAR
+  description: 'Implementation of "Boosting Moving Average Reversion Strategy for Online Portfolio Selection: A Meta-Learning Approach."'
+  repo: THUIR/BMAR
+  tags:
+    - Portfolio Selection
+
+- title: NARRE
+  group: code
+  link: https://github.com/THUIR/NARRE
+  description: Implementation of NARRE, a neural attentional regression model with review-level explanations for recommendation.
+  repo: THUIR/NARRE
+  tags:
+    - Recommendation
+
+- title: TranSIV
+  group: code
+  link: https://github.com/THUIR/TranSIV
+  description: Code for TranSIV, "Learning and Transferring Social and Item Visibilities for Personalized Recommendation" (CIKM 2017).
+  repo: THUIR/TranSIV
+  tags:
+    - Recommendation
+
+- title: PositionBiasInLP
+  group: code
+  link: https://github.com/THUIR/PositionBiasInLP
+  description: Source code of "Incorporating Position Bias into Click-through Bipartite Graph" (CCIR 2017).
+  repo: THUIR/PositionBiasInLP
+  tags:
+    - Click Models
+
+- title: DEEP-CLICK-MODEL
+  group: code
+  link: https://github.com/THUIR/DEEP-CLICK-MODEL
+  description: A small set of Python scripts implementing different deep click models, including RNN-based and deep UBM/PSCM variants.
+  repo: THUIR/DEEP-CLICK-MODEL
+  tags:
+    - Click Models
+
+- title: PSCMModel
+  group: code
+  link: https://github.com/THUIR/PSCMModel
+  description: Implementation of user click models based on the Yandex click model framework, including the Partially Sequential Click Model (PSCM, SIGIR 2015).
+  repo: THUIR/PSCMModel
+  tags:
+    - Click Models
+
+- title: MotifExtraction
+  group: code
+  link: https://github.com/THUIR/MotifExtraction
+  description: 'Implementation of the motif extraction algorithm from "Different Users, Different Opinions: Predicting Search Satisfaction with Mouse Movement Information" (SIGIR 2015).'
+  repo: THUIR/MotifExtraction
+  tags:
+    - User Behavior
+
+- title: Click Models for Mobile Search
+  group: code
+  link: https://github.com/THUIR/click_model_for_mobile_search
+  description: A project for building click models for mobile search, based on Aleksandr Chuklin's click models project.
+  repo: THUIR/click_model_for_mobile_search
+  tags:
+    - Click Models
+
+- title: EquityRank
+  group: code
+  link: https://github.com/THUIR/EquityRank
+  description: 'Implementation of "Equity vs. Equality: Optimizing Ranking Fairness for Tailored Provider Needs" (SIGIR 2026).'
+  repo: THUIR/EquityRank
+  tags:
+    - Fairness
+    - Ranking
+
+- title: Caseformer
+  group: code
+  link: https://github.com/THUIR/Caseformer
+  description: Code for Caseformer
+  repo: THUIR/Caseformer
+  tags: []
+
+- title: MemoryBench-LeaderBoard
+  group: code
+  link: https://github.com/THUIR/MemoryBench-LeaderBoard
+  description: The LeaderBoard of MemoryBench
+  repo: THUIR/MemoryBench-LeaderBoard
+  tags: []
+
+# ============================================================
+# HuggingFace Projects
+# ============================================================
+
+- title: T<sup>2</sup>Ranking
+  subtitle: huggingface.co/datasets/THUIR/T2Ranking
+  group: huggingface
+  image: images/opensource/T2Ranking.png
+  link: https://huggingface.co/datasets/THUIR/T2Ranking
+  description: A large-scale Chinese benchmark for passage ranking with more than 300K queries and over 2M unique passages sampled from real-world search engines, distributed via the HuggingFace Datasets Hub.
+  tags:
+    - Dataset
+    - Passage Ranking
+
+- title: Qilin
+  subtitle: huggingface.co/datasets/THUIR/Qilin
+  group: huggingface
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/THUIR/Qilin.png
+  link: https://huggingface.co/datasets/THUIR/Qilin
+  description: A large-scale multimodal dataset for search, recommendation, and Retrieval-Augmented Generation (RAG) research, built from app-level user sessions with rich query, interaction, and multimodal content data.
+  repo: RED-Search/Qilin
+  tags:
+    - Dataset
+    - Search
+    - Recommendation
+    - RAG
+
+- title: MemoryBench
+  subtitle: huggingface.co/datasets/THUIR/MemoryBench
+  group: huggingface
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/THUIR/MemoryBench.png
+  link: https://huggingface.co/datasets/THUIR/MemoryBench
+  description: A benchmark for evaluating memory and continual learning in LLM systems, testing whether they can learn from accumulated user feedback during service time. Accepted at ICML 2026 as a Spotlight paper.
+  repo: THUIR/MemoryBench
+  tags:
+    - Dataset
+    - LLM
+    - Memory
+    - Continual Learning
+
+- title: MemoryBench-Full
+  subtitle: huggingface.co/datasets/THUIR/MemoryBench-Full
+  group: huggingface
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/THUIR/MemoryBench-Full.png
+  link: https://huggingface.co/datasets/THUIR/MemoryBench-Full
+  description: An extended version of the MemoryBench dataset with additional user feedback data and simulator settings.
+  repo: THUIR/MemoryBench
+  tags:
+    - Dataset
+    - LLM
+    - Memory
+
+- title: MemoryBench-Results
+  subtitle: huggingface.co/datasets/THUIR/MemoryBench-Results
+  group: huggingface
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/THUIR/MemoryBench-Results.png
+  link: https://huggingface.co/datasets/THUIR/MemoryBench-Results
+  description: An artifact archive of published MemoryBench experiment runs, including model predictions, per-sample evaluation details, and aggregate summaries across multiple backbone models.
+  repo: THUIR/MemoryBench
+  tags:
+    - Dataset
+    - LLM
+    - Memory
+
+- title: AEOLLM
+  subtitle: huggingface.co/datasets/THUIR/AEOLLM
+  group: huggingface
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/THUIR/AEOLLM.png
+  link: https://huggingface.co/datasets/THUIR/AEOLLM
+  description: Datasets for the NTCIR-18 and NTCIR-19 Automatic Evaluation of LLMs (AEOLLM) tasks, supporting research on automatic evaluation methods for large language model outputs.
+  tags:
+    - Dataset
+    - LLM Evaluation
+
+- title: AEOLLM Leaderboard
+  subtitle: huggingface.co/spaces/THUIR/AEOLLM
+  group: huggingface
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/THUIR/AEOLLM.png
+  link: https://huggingface.co/spaces/THUIR/AEOLLM
+  description: A live leaderboard Space tracking submissions to the NTCIR AEOLLM tasks for automatic evaluation of large language models.
+  tags:
+    - Space
+    - LLM Evaluation
+
+- title: MetaSyn
+  subtitle: huggingface.co/datasets/THUIR/MetaSyn
+  group: huggingface
+  image: https://cdn-thumbnails.huggingface.co/social-thumbnails/datasets/THUIR/MetaSyn.png
+  link: https://huggingface.co/datasets/THUIR/MetaSyn
+  description: A dataset of 442 meta-analyses from the Nature Portfolio (2015-2024) paired with a retrieval corpus of 140K+ PubMed-indexed articles, built to benchmark LLM agent pipelines on the full meta-analysis workflow of retrieval, screening, extraction, and synthesis.
+  repo: THUIR/MetaSyn
+  tags:
+    - Dataset
+    - LLM Agents
+    - Meta-Analysis
