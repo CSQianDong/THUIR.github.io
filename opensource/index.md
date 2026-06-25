@@ -15,6 +15,14 @@ nav:
   link="THUIR"
   style="button"
 %}
+{%
+  include link.html
+  type="huggingface"
+  icon=""
+  text="Follow us on HuggingFace"
+  link="THUIR"
+  style="button"
+%}
 {:.center}
 
 {% include search-info.html %}
@@ -30,6 +38,18 @@ nav:
 ## Datasets
 
 {% include list.html component="datasets" data="tools" filters="group: dataset" style="rich" %}
+
+{% include section.html %}
+
+## Code / Paper Implementations
+
+{% include list.html component="datasets" data="tools" filters="group: code" style="rich" %}
+
+{% include section.html %}
+
+## HuggingFace Projects
+
+{% include list.html component="card" data="tools" filters="group: huggingface" style="large" %}
 
 {% include section.html %}
 
