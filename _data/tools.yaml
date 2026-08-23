@@ -635,6 +635,20 @@
   repo: THUIR/MemoryBench-LeaderBoard
   tags: []
 
+- title: ReGrad
+  group: code
+  link: https://github.com/THUIR/ReGrad
+  description: 'Code for our paper: Retrievable Gradients'
+  repo: THUIR/ReGrad
+  tags: []
+
+- title: SR-Agents
+  group: code
+  link: https://github.com/THUIR/SR-Agents
+  description: 'SRA-Bench and SR-Agents: a benchmark and toolkit for skill-retrieval-augmented LLM agents.'
+  repo: THUIR/SR-Agents
+  tags: []
+
 # ============================================================
 # HuggingFace Projects
 # ============================================================
