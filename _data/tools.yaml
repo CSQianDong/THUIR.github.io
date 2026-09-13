@@ -744,3 +744,10 @@
     - Dataset
     - LLM Agents
     - Meta-Analysis
+
+- title: ANSER-Bench
+  subtitle: huggingface.co/datasets/THUIR/ANSER-Bench
+  group: huggingface
+  link: https://huggingface.co/datasets/THUIR/ANSER-Bench
+  description: ''
+  tags: []
