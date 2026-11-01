@@ -649,6 +649,13 @@
   repo: THUIR/SR-Agents
   tags: []
 
+- title: ANSER-Bench
+  group: code
+  link: https://github.com/THUIR/ANSER-Bench
+  description: </p>
+  repo: THUIR/ANSER-Bench
+  tags: []
+
 # ============================================================
 # HuggingFace Projects
 # ============================================================
